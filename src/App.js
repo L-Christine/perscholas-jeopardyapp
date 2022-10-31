@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Questions from './components/Questions';
 
 function App() {
+  
+  const getQuestion = async () => {
+    try {
+      const res = await fetch('http://jservice.io/api/random')
+      const data = await res.json()
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to Jeopardy!</h1>
+      <h2>Score:</h2>
+      <button onClick={()=>{}}>Decrease</button>
+      <button onClick={()=>{}}>Increase</button>
+      <button onClick={()=>{}}>Reset</button>
+      <h2>Let's Play!</h2>
+      <button onClick={getQuestion}>Get Question</button>
+      
     </div>
   );
 }
