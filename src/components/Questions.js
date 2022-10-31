@@ -1,11 +1,11 @@
-export default function Questions (props) {
-    const {randQuestion} = props;
-    console.log(randQuestion);
+export default function randQuestion (props) {
+    const {randQ} = props;
+    console.log(randQ);
         return(
             <div>
-                <h2>{randQuestion.Category}</h2>
-                <h2>{randQuestion.Points}</h2>
-                <h2>{randQuestion.Answer}</h2>
+                <h3>{randQ.Category}</h3>
+                <h3>{randQ.Points}</h3>
+                <h3>{randQ.Answer}</h3>
             </div>
         )
 }
