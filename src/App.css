@@ -2,6 +2,7 @@
   text-align: center;
   background-color:#61dafb;
   color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
 }
 
 .App-logo {
@@ -42,8 +43,27 @@
 button {
   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
   border-color: white;
-  color: white;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
   padding: 10px;
   border-radius: 10%;
   margin: 10px;
+}
+
+.qBoard {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  border-style: solid;
+  margin: 50px;
+  padding: 10px;
+}
+
+.ansBoard {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  border-style: solid;
+  margin: 50px;
+  padding: 10px;
 }
